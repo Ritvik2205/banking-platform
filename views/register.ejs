@@ -1,0 +1,25 @@
+<%- include('partials/header.ejs') %>
+
+<center>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> -->
+  <div class="register-card">
+    <div class="register-left">
+      <form action="/register" method="post">
+        <input type="name" class="username" name="name" placeholder="Username" maxlength="15" autocomplete="off" required>
+            
+        <input class="email" name="email" type="email" placeholder="email" maxlength="30" required>
+        <input class="password" name="password" type="password" maxlength="15" placeholder="password" autocomplete="off" required>
+        <br>
+        <input class="submit" type="submit" value="Register">  
+      </form>
+      
+    </div>
+    
+    <div class="register-right">
+      <h1>Join Solaris</h1>
+      <p class="subtext">Already a user? <a href="/login">Login</a></p>
+    </div> 
+    <div class="in"></div>
+  </center>
+
+<%- include('partials/footer.ejs') %>
